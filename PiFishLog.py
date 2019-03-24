@@ -1,13 +1,15 @@
 import csv
 while True:
     operation = raw_input("\nEnter an operation. F = add fish, L = view log, and E = end.: ")
-    
+
     if operation == 'F':
-        species = raw_input("\nWhat is the species?: ")
-        temp = raw_input("What is the air temperature?: ")
-        baro = raw_input("What is the barometric pressure?: ")
-        humid = raw_input("What is the humidity?: ")
-        appendMe = str('\n'+species+','+temp+','+baro+','+humid)
+        species = raw_input("\nSpecies?: ")
+        weight = raw_input("Weight?: ")
+        length = raw_input("Length?: ")
+        temp = raw_input("Air temp?: ")
+        baro = raw_input("Barometric pressure?: ")
+        humid = raw_input("Humidity?: ")
+        appendMe = str('\n'+species+','+weight+','+length+','+temp+','+baro+','+humid)
         appendFile = open('log.csv', 'a')
         appendFile.write(appendMe)
         appendFile.close()

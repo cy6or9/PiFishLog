@@ -1,3 +1,1 @@
-species,temp,baro,humid
-walleye,56,65,45
-catfish,65,23,76
+species,weight,length,temp,baro,humid
